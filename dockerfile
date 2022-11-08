@@ -3,5 +3,5 @@ FROM alpine
 RUN \
 apk update && \
 apk add nginx
-COPY ./nginx /
+COPY ./docker /
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
